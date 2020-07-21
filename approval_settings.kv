@@ -1,0 +1,47 @@
+<ApprovalsWindow>
+    NavigationLayout:
+        ScreenManager:
+            id: approvalwindow
+            Screen:
+                name: "approvals_window"
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDToolbar:
+                        title: "My Approvals"
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+                    MDFloatLayout:
+                        id: approval_float_lay
+                        BoxLayout:
+                            id: boxlay
+        MDNavigationDrawer:
+            id: nav_drawer
+            ContentNavigationDrawer:
+                id: nav_lay
+                nav_drawer: nav_drawer
+
+
+<SettingsWindow>
+    NavigationLayout:
+        ScreenManager:
+            Screen:
+                name: "settings"
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    MDToolbar:
+                        title: "Togetherly"
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.set_state("open")]]
+                    MDLabel:
+                        text: "Howdy settings"
+                    FloatLayout:
+                        MDRoundFlatIconButton:
+                            text: "Select Image"
+                            icon: "folder"
+                            pos_hint: {'center_x': .5, 'center_y': .6}
+                            on_release: app.file_manager_open()
+        MDNavigationDrawer:
+            id: nav_drawer
+            ContentNavigationDrawer:
+                id: nav_lay
+                nav_drawer: nav_drawer

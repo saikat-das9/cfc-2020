@@ -1,0 +1,7 @@
+var_userid=""
+var_fname=""
+var_lname=""
+var_email=""
+var_org_id=""
+var_act_name=""
+var_act_id=""

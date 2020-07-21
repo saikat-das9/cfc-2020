@@ -1,0 +1,21 @@
+
+Install cryptography for encryption:
+python -m pip install cryptography
+Install pyopenssl
+
+copied the following files
+
+libcrypto-1_1-x64.*
+libssl-1_1-x64.*
+from D:\Anaconda3\Library\bin to D:\Anaconda3\DLLs.
+
+
+Add following to PATH variables:
+<path>\Anaconda3
+<path>\Anaconda3\scripts
+<path>\Anaconda3\Library\bin
+
+Restart VS Code
+
+For sending email, add email id and password in environment variables
+Email: aaksathe@gmail.com
